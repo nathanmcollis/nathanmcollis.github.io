@@ -1,10 +1,10 @@
 /* -------------- BASE --------------- */
 
-* {
-  -webkit-user-select: none;  /* Chrome, Safari */
-  -moz-user-select: none;     /* Firefox */
-  -ms-user-select: none;      /* IE/Edge */
-  user-select: none;          /* Standard */
+html, body, div, p, h1, h2, h3, h4, h5, h6, span, a {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* IE/Edge */
+  user-select: none;         /* Standard */
 }
 
 p {
