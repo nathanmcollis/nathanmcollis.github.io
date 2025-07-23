@@ -1,0 +1,151 @@
+/* -------------- BASE --------------- */
+
+p {
+    font-size: 0.7rem;
+}
+
+.row {
+    --bs-gutter-x: 0rem;
+}
+
+
+/* -------------- NAV -------------- */
+.nav {
+    height: 5vh;
+    width: 100vw;
+    /* position : fixed;
+    background: transparent; */
+    margin-top: 1rem;
+    z-index: 10;
+}
+
+#nav-left {
+    text-align: right;
+}
+
+#nav-center {
+    text-align: center;
+}
+
+#nav-right {
+    text-align: left;
+}
+
+@media screen and (max-width:480px) {
+    .nav {
+        width: auto;
+        padding-top: 0.4rem;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    /* .nav>div>p {
+        line-height: 0.8rem !important;
+        text-align: center !important;
+    } */
+
+    #nav-left {
+        text-align: left;
+    }
+    
+    #nav-center {
+        text-align: center;
+    }
+    
+    #nav-right {
+        text-align: right;
+    }
+}
+
+
+/* -------------- MAIN IMAGES -------------- */
+
+
+#hero-image-container::selection {
+    background-color: transparent;
+}
+
+#next::selection {
+    background-color: transparent;
+}
+
+#back::selection {
+    background-color: transparent;
+}
+
+#hero-images {
+    height: 80vh;
+    width: auto;
+    margin: 0 auto;
+}
+
+#hero-nav {
+    position: absolute;
+    left: 0;
+    top: 50vh;
+    width: 100%;
+    --bs-gutter-x: 0rem;
+    padding: 0 10%;
+    opacity: 10%;
+}
+
+#description {
+    width: 50%;
+    padding: 0.2rem 1rem;
+    margin: 0 auto;
+    font-size: 0.6rem;
+}
+
+
+#hero-container {
+    height: 90vh;
+    width: 100vw;
+    --bs-gutter-x: 0rem;
+}
+
+#description {
+    margin-top: 0.5rem;
+}
+
+
+@media screen and (max-width:480px) {
+    #hero-nav {
+        position: absolute;
+        width: 100%;
+        --bs-gutter-x: 0rem;
+        padding: 0 3rem;
+    }
+
+    #hero-images {
+        width: 90vw;
+        height: auto;
+        padding: 0 1rem;
+    }
+
+    #hero-nav {
+        position: initial;
+        width: 100%;
+        --bs-gutter-x: 0rem;
+        padding: 0 5%;
+    }
+
+    #description {
+        width: 100%;
+    }
+}
+
+
+/* -------------- BIO -------------- */
+#bio-container {
+    height: 100vh;
+}
+
+#bio {
+    width: 50%;
+}
+
+@media screen and (max-width:480px) {
+    #bio {
+        width: 100%;
+    }
+}
