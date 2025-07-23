@@ -12,13 +12,12 @@
 </head>
 
 <body class="epi-thick text-dark">
-    <header class="nav row justify-content-center align-items-center">
-        <div class="col-4" id="nav-left">
-            <p></p>
-        </div>
-        <div class="col-4" id="nav-center">
-            <p>NATHAN M. COLLIS</p>
-        </div>
+    <header class="nav d-flex justify-content-center align-items-center position-relative">
+    <p id="scroll-to-bio" class="position-absolute top-50 start-50 translate-middle text-center m-0" style="cursor: pointer;">
+        NATHAN M. COLLIS
+    </p>
+</header>
+
         <div class="col-4" id="nav-right">
             <p></p>
         </div>
@@ -152,6 +151,13 @@
         document.getElementById('next').addEventListener('click', () => {
             updateImage(currentIndex + 1);
         });
+
+// Scroll to bio section on title click
+document.getElementById('scroll-to-bio').addEventListener('click', () => {
+    document.getElementById('bio-container').scrollIntoView({
+        behavior: 'smooth'
+    });
+});
 
     </script>
 </body>
