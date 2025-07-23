@@ -93,7 +93,7 @@ p {
     width: 100%;
     --bs-gutter-x: 0rem;
     padding: 0 10%;
-    opacity: 40%;
+    opacity: 20%;
 }
 
 #description {
@@ -155,12 +155,4 @@ p {
     #bio {
         width: 100%;
     }
-  #hero-images {
-    transition: opacity 0.3s ease-in-out;
-    opacity: 1;
-}
-
-#hero-images.opacity-0 {
-    opacity: 0;
-}
 }
