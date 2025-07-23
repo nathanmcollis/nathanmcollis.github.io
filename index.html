@@ -116,60 +116,25 @@
         function updateImage(index) {
     currentIndex = (index + imageData.images.length) % imageData.images.length;
 
-    const newImage = new Image();
     const newSrc = `assets/hero_images/${imageData.images[currentIndex]}`;
+    const newImage = new Image();
 
-    // Optional: add loading class or style here if needed
-    imgElement.classList.add('opacity-0'); // For fade effect
+    // Optional: Add fade-out class for smoother UX
+    imgElement.classList.add('opacity-0');
 
     newImage.onload = () => {
+        // When image is fully loaded, update src and text
         imgElement.src = newSrc;
         imgAlt.textContent = imageData.altTexts[currentIndex];
-        imgElement.classList.remove('opacity-0'); // Reveal image after load
+
+        // Remove fade class after short delay to allow transition
+        requestAnimationFrame(() => {
+            imgElement.classList.remove('opacity-0');
+        });
     };
 
-    newImage.src = newSrc;
+    newImage.src = newSrc; // Start loading
 }
-
-        // Click image to go to next or back
-        imgContainer.addEventListener('click', (e) => {
-            const clickX = e.clientX;
-            const containerWidth = imgContainer.offsetWidth;
-
-            if (clickX < containerWidth / 2) {
-                // Left side: go back
-                updateImage(currentIndex - 1);
-            } else {
-                // Right side: go next
-                updateImage(currentIndex + 1);
-            }
-        });
-
-        // Press keyboard to go to next or back
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'ArrowLeft') {
-                updateImage(currentIndex - 1);
-            } else if (e.key === 'ArrowRight') {
-                updateImage(currentIndex + 1);
-            }
-        });
-
-        // Back button
-        document.getElementById('back').addEventListener('click', () => {
-            updateImage(currentIndex - 1);
-        });
-
-        // Next button
-        document.getElementById('next').addEventListener('click', () => {
-            updateImage(currentIndex + 1);
-        });
-
-// Scroll to bio section on title click
-document.getElementById('scroll-to-bio').addEventListener('click', () => {
-    document.getElementById('bio-container').scrollIntoView({
-        behavior: 'smooth'
-    });
-});
 
     </script>
 </body>
