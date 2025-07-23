@@ -157,25 +157,6 @@ document.getElementById('scroll-to-bio').addEventListener('click', () => {
     document.getElementById('bio-container').scrollIntoView({
         behavior: 'smooth'
     });
-
-    function updateImage(index) {
-    currentIndex = (index + imageData.images.length) % imageData.images.length;
-
-    const newSrc = `assets/hero_images/${imageData.images[currentIndex]}`;
-    const newAlt = imageData.altTexts[currentIndex];
-
-    // Optionally hide image or add loading class
-    imgElement.style.opacity = 0;
-    
-    // Create a new image to preload
-    const preloadImg = new Image();
-    preloadImg.src = newSrc;
-    preloadImg.onload = () => {
-        imgElement.src = newSrc;
-        imgElement.alt = newAlt;
-        imgAlt.textContent = newAlt;
-    };
-}
 });
 
     </script>
