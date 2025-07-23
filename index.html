@@ -114,10 +114,22 @@
         const imgAlt = document.getElementById('description');
 
         function updateImage(index) {
-            currentIndex = (index + imageData.images.length) % imageData.images.length;
-            imgElement.src = `assets/hero_images/${imageData.images[currentIndex]}`;
-            imgAlt.textContent = imageData.altTexts[currentIndex];
-        }
+    currentIndex = (index + imageData.images.length) % imageData.images.length;
+
+    const newImage = new Image();
+    const newSrc = `assets/hero_images/${imageData.images[currentIndex]}`;
+
+    // Optional: add loading class or style here if needed
+    imgElement.classList.add('opacity-0'); // For fade effect
+
+    newImage.onload = () => {
+        imgElement.src = newSrc;
+        imgAlt.textContent = imageData.altTexts[currentIndex];
+        imgElement.classList.remove('opacity-0'); // Reveal image after load
+    };
+
+    newImage.src = newSrc;
+}
 
         // Click image to go to next or back
         imgContainer.addEventListener('click', (e) => {
