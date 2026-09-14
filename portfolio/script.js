@@ -18,7 +18,7 @@ const projects = [
   {
     client: "TRAN UY DUC / RELAXIN RECORDS",
     type: "CD DESIGN",
-    description: 'Artwork and design for Vietnamese experimental artist Tran Uy Duc, on their latest release ‘Byshh.',
+    description: 'Artwork and design for Tran Uy Duc, on their latest release Byshh out on Relaxin Records',
     slides: [
       { kind: "image", src: "assets/1-byshh-cover.webp", width: "66.79vw", alt: "Relaxin Records / Tran Uy Duc CD cover" },
       { kind: "image", src: "assets/2-byshh-inner.webp", width: "57.99vw", alt: "Relaxin Records / Tran Uy Duc CD inner artwork" }
@@ -47,7 +47,7 @@ const projects = [
   {
     client: "SE DESAISSIR PUBLISHING",
     type: "LP DESIGN",
-    description: 'Logo type / album artwork designed for se Desaissir. Publishing They had the idea to use a typewriter as a knitting mechanism to create images using inidivual letters.',
+    description: 'Logo type / album artwork designed for se Desaissir Publishing. Modelled after Lenka Claytons typewriter drawings, using the typewriter as a knitting mechanism to create images out of letters.',
     slides: [
       { kind: "image", src: "assets/9-SDP-sweater.webp", width: "47.31vw", alt: "Se Desaissir Publishing LP artwork" }
     ]
