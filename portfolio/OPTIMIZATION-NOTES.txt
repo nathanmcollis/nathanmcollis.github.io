@@ -1,0 +1,15 @@
+PORTFOLIO OPTIMIZATION NOTES
+
+This build preserves the latest HTML/CSS/JS layout and interactions, while reducing asset weight for faster loading.
+
+Changes made:
+- Portfolio JPG/JPEG artwork converted to WebP at high quality (quality 90).
+- Oversized artwork is capped at 3200 px on its longest edge, which is still generous for high-DPI desktop display.
+- Sophie Zamel website screenshots use lossless WebP after resizing to preserve text/interface detail.
+- phone.png remains PNG so its transparent frame stays crisp.
+- Henry + Babs MP4 video stream is unchanged (no visual re-encode); the unused audio track was removed and fast-start metadata was enabled.
+- The first portfolio image is preloaded for a faster initial page render.
+- The page before Henry + Babs now warms the browser cache for the phone graphic and video.
+- macOS .DS_Store / __MACOSX metadata removed.
+
+The editable source code remains unminified so it is still easy to modify in VS Code.

@@ -1,0 +1,302 @@
+:root {
+  /* Measurements taken from the annotated 1920 × 1080 folio plan. */
+  --header-height: 69px;
+  --footer-height: 95px;
+  --page-background: #ffffff;
+  --text-colour: #000000;
+  --type-size: 8pt;
+  --type-leading: 11px;
+  --footer-side-gap: 350px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: var(--page-background);
+}
+
+body {
+  color: var(--text-colour);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: var(--type-size);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+.portfolio {
+  position: relative;
+  width: 100vw;
+  height: 100dvh;
+  min-height: 100vh;
+  background: var(--page-background);
+  isolation: isolate;
+}
+
+/* --------------------------------------------------------------------------
+   HEADER
+   The horizontal positions below are taken from the 1920px-wide PDF artwork.
+   Percentages keep the same relationships when the browser is resized.
+   -------------------------------------------------------------------------- */
+
+.site-header {
+  position: absolute;
+  inset: 0 0 auto 0;
+  z-index: 30;
+  height: var(--header-height);
+  background: var(--page-background);
+  white-space: nowrap;
+  font-size: var(--type-size);
+  line-height: var(--type-leading);
+  text-transform: uppercase;
+}
+
+.site-header > div {
+  position: absolute;
+  top: 29px;
+}
+
+.header-name {
+  left: 3.88%;
+}
+
+.header-client-label {
+  left: 23.01%;
+}
+
+.header-client {
+  left: 32.07%;
+}
+
+.header-project-label {
+  left: 82.75%;
+}
+
+.header-project {
+  left: 91.46%;
+}
+
+/* --------------------------------------------------------------------------
+   IMAGE / VIDEO AREA
+   Images are centred and never distorted. Each slide can optionally specify a
+   width matching the PDF plan; max-height prevents it from colliding with the
+   header/footer on shorter windows.
+   -------------------------------------------------------------------------- */
+
+.work-area {
+  position: absolute;
+  inset: var(--header-height) 0 var(--footer-height) 0;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.media-stage {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.portfolio-media {
+  display: block;
+  width: var(--slide-width, auto);
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* ----------------------------------------------------------
+   BABS + HENRY PHONE
+   ---------------------------------------------------------- */
+
+.phone-composite {
+  position: relative;
+  width: var(--slide-width, 21.15vw);
+  aspect-ratio: 1118 / 2361;
+  max-width: 100%;
+  max-height: 100%;
+  pointer-events: none;
+}
+
+/* This is the actual screen area inside the phone */
+.phone-screen {
+  position: absolute;
+
+  left: 2.22%;
+  top: 1.03%;
+  width: 94.49%;
+  height: 97.38%;
+
+  overflow: hidden;
+  border-radius: 5.2% / 2.4%;
+  z-index: 1;
+  pointer-events: none;
+
+  /* Keeps this box's geometry fixed */
+  contain: layout paint;
+}
+
+.phone-screen video {
+  position: absolute;
+  inset: 0;
+
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center center;
+
+  pointer-events: none;
+
+  /* Prevent visible resizing while the MP4 loads */
+  opacity: 0;
+
+  /* Helps stop rendering/jitter in some browsers */
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.phone-screen video.video-ready {
+  opacity: 1;
+}
+
+.phone-composite img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 2;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* ----------------------------------------------------------
+   NAVIGATION
+
+   The entire page is one forward-click area.
+   ---------------------------------------------------------- */
+
+.portfolio {
+  cursor: pointer;
+}
+
+/* --------------------------------------------------------------------------
+   FOOTER
+   The annotated plan specifies 9pt copy and a minimum 350pt side gap on a
+   1920-wide page. max-width: 1220px gives 350px at each side at 1920px.
+   -------------------------------------------------------------------------- */
+
+.site-footer {
+  position: absolute;
+  inset: auto 0 0 0;
+  z-index: 30;
+  height: var(--footer-height);
+  background: var(--page-background);
+  font-size: var(--type-size);
+  line-height: var(--type-leading);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 41px;
+  text-align: center;
+}
+
+.site-footer p {
+  width: calc(100% - (2 * var(--footer-side-gap)));
+  max-width: 1220px;
+  margin: 0;
+
+  font-size: calc(var(--type-size) - 1px);
+}
+
+/* --------------------------------------------------------------------------
+   SMALLER SCREENS
+   The PDF is a desktop 16:9 plan. This media query keeps the site usable on a
+   phone without changing the desktop composition.
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 900px) {
+  :root {
+    --header-height: 92px;
+    --footer-height: 104px;
+    --footer-side-gap: 20px;
+  }
+
+  .site-header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 4px 16px;
+    align-content: center;
+    padding: 12px 18px;
+    white-space: normal;
+  }
+
+  .site-header > div {
+    position: static;
+  }
+
+  .header-name {
+    grid-column: 1 / -1;
+    margin-bottom: 3px;
+  }
+
+  .header-label {
+    opacity: 0.65;
+  }
+
+  .site-footer {
+    padding: 22px 20px 0;
+  }
+
+  .site-footer p {
+    width: 100%;
+  }
+
+  .portfolio-media,
+  .phone-composite {
+    width: auto;
+    max-width: 92vw;
+    max-height: 100%;
+  }
+
+  .phone-composite {
+    width: min(43vw, 320px);
+  }
+}
+/* Prevent text/image highlighting */
+html,
+body,
+.portfolio {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* Prevent image dragging */
+img,
+video {
+  -webkit-user-drag: none;
+  user-drag: none;
+}
