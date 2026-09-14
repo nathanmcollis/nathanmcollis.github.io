@@ -18,7 +18,7 @@ const projects = [
   {
     client: "TRAN UY DUC / RELAXIN RECORDS",
     type: "CD DESIGN",
-    description: 'Artwork and design for Tran Uy Duc on their latest release 'Byshh', out on Relaxin Records',
+    description: 'Artwork and design for Tran Uy Duc on their latest release 'Byshh' out on Relaxin Records',
     slides: [
       { kind: "image", src: "assets/1-byshh-cover.webp", width: "66.79vw", alt: "Relaxin Records / Tran Uy Duc CD cover" },
       { kind: "image", src: "assets/2-byshh-inner.webp", width: "57.99vw", alt: "Relaxin Records / Tran Uy Duc CD inner artwork" }
@@ -36,7 +36,7 @@ const projects = [
   {
     client: "ANTIGONE YANNOULIDIS",
     type: "BOOK DESIGN / LAYOUT",
-    description: 'Layout and design for Antigone Yannoulidis’ book ‘Little Lull’. This book explores the sub-kink space of it's protagonist protagonist Little Lull. Hand-bound and iron brandished by Antigone herself',
+    description: 'Layout and design for Antigone Yannoulidis’ book ‘Little Lull’. This book explores the sub-kink space of protagonist Little Lull. Hand-bound and iron brandished by Antigone herself',
     slides: [
       { kind: "image", src: "assets/5-littlelull.webp", width: "37.35vw", alt: "Little Lull's Playroom book cover" },
       { kind: "image", src: "assets/6-littlelull.webp", width: "34.81vw", alt: "Little Lull's Playroom book spines" },
@@ -131,7 +131,7 @@ const projects = [
   {
     client: "SE DESAISSIR PUBLISHING",
     type: "POSTER DESIGN",
-    description: 'For se Dessaisir Publishing's event headlining Huerco S',
+    description: 'For se Dessaisir Publishing event headlining Huerco S',
     slides: [
       { kind: "image", src: "assets/23-SDS2-.webp", width: "38.69vw", alt: "Se Desaissir Publishing poster" }
     ]
