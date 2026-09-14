@@ -18,7 +18,7 @@ const projects = [
   {
     client: "TRAN UY DUC / RELAXIN RECORDS",
     type: "CD DESIGN",
-    description: 'Artwork and design for Tran Uy Duc, on their latest release Byshh out on Relaxin Records',
+    description: 'Artwork and design for Tran Uy Duc on their latest release 'Byshh', out on Relaxin Records',
     slides: [
       { kind: "image", src: "assets/1-byshh-cover.webp", width: "66.79vw", alt: "Relaxin Records / Tran Uy Duc CD cover" },
       { kind: "image", src: "assets/2-byshh-inner.webp", width: "57.99vw", alt: "Relaxin Records / Tran Uy Duc CD inner artwork" }
@@ -27,7 +27,7 @@ const projects = [
   {
     client: "SOPHIE ZAMEL",
     type: "WEB & ECOMMERCE",
-    description: 'Webshop for contemporary fine jewellery designer Sophie Zamel. The website was designed with an editorial focus to give the effect of a physical catalogue.',
+    description: 'Webshop for contemporary fine jewellery designer Sophie Zamel. The website was designed with an editorial focus to give the effect of a physical catalogue',
     slides: [
       { kind: "image", src: "assets/3-SZ-website-page1.webp", width: "80.56vw", alt: "Sophie Zamel ecommerce website home page" },
       { kind: "image", src: "assets/4-SZ-website-page.webp", width: "80.61vw", alt: "Sophie Zamel ecommerce website product page" }
@@ -36,7 +36,7 @@ const projects = [
   {
     client: "ANTIGONE YANNOULIDIS",
     type: "BOOK DESIGN / LAYOUT",
-    description: 'Layout and design for Antigone Yannoulidis’ book ‘Little Lull’. This book explores the sub-kink space of the protagonist Little Lull. We emphasized tactility by hand binding and iron brandishing each book.',
+    description: 'Layout and design for Antigone Yannoulidis’ book ‘Little Lull’. This book explores the sub-kink space of it's protagonist protagonist Little Lull. Hand-bound and iron brandished by Antigone herself',
     slides: [
       { kind: "image", src: "assets/5-littlelull.webp", width: "37.35vw", alt: "Little Lull's Playroom book cover" },
       { kind: "image", src: "assets/6-littlelull.webp", width: "34.81vw", alt: "Little Lull's Playroom book spines" },
@@ -47,7 +47,7 @@ const projects = [
   {
     client: "SE DESAISSIR PUBLISHING",
     type: "LP DESIGN",
-    description: 'Logo type / album artwork designed for se Desaissir Publishing. Modelled after Lenka Claytons typewriter drawings, using the typewriter as a knitting mechanism to create images out of letters.',
+    description: 'Logo type / album artwork designed for se Desaissir Publishing. Modelled after Lenka Claytons typewriter drawings, using the typewriter as a knitting mechanism',
     slides: [
       { kind: "image", src: "assets/9-SDP-sweater.webp", width: "47.31vw", alt: "Se Desaissir Publishing LP artwork" }
     ]
@@ -63,7 +63,7 @@ const projects = [
   {
     client: "ABSORB x LIQUID ARCHITECTURE",
     type: "POSTER DESIGN",
-    description: 'Illustration and design to accompany the launch of ‘Disaster 1’ by Bodies of Divine, Infinite and Eternal Spirit,  which was perfomed by 46 members of the choir. This event was hosted by Liquid Architecture in collaboration with Absorb at Church of All Nations on June 6th 2026.',
+    description: 'Illustration and design to accompany the launch of ‘Disaster 1’ by Bodies of Divine, Infinite and Eternal Spirit,  which was perfomed by 37 members of the choir. This event was hosted by Absorb in collaboration with Liquid Architecture at Church of All Nations on June 6th 2026',
     slides: [
       { kind: "image", src: "assets/11-LAxAbsorb-double poster.webp", width: "64.86vw", alt: "Absorb x Liquid Architecture double poster" }
     ]
@@ -71,7 +71,7 @@ const projects = [
   {
     client: "NEW READER",
     type: "LAYOUT / EDITING",
-    description: 'Assisted with the preparation of books scans for the library of New Reader, in interview with Juan Alvears on his influences.',
+    description: 'Assisted with the preparation of books scans for the library of New Reader, in interview with Juan Alvears on their influences',
     slides: [
       { kind: "image", src: "assets/12-newreader-layout.webp", width: "70.29vw", alt: "New Reader layout" }
     ]
@@ -79,7 +79,7 @@ const projects = [
   {
     client: "FENG-MEI HEBERER",
     type: "POSTER DESIGN",
-    description: 'Commissioned poster series for ETA - a film festival curated by Feng-Mei Heberer in collaboration with Saigon Experimental. This event played on themes of the airport as a place of exchange for experimental cinema across the world. ',
+    description: 'Commissioned poster series for ETA - a film festival curated by Feng-Mei Heberer in collaboration with Saigon Experimental. This event played on themes of the airport as a place of exchange for experimental cinema across the world ',
     slides: [
       { kind: "image", src: "assets/13-ETA.webp", width: "38.30vw", alt: "Feng-Mei Heberer poster" },
       { kind: "image", src: "assets/14-ETA.webp", width: "39.16vw", alt: "Feng-Mei Heberer poster installed on an aircraft" }
@@ -88,7 +88,7 @@ const projects = [
   {
     client: "BOYFRIEND TV",
     type: "CD DESIGN",
-    description: 'Boyfriend TV’s first release ‘For The Teenage Soul’ - cover image by Tim Hardy. The brothers bedroom was the brief for this design.',
+    description: 'Boyfriend TV’s first release ‘For The Teenage Soul’ - cover image by Tim Hardy. The brothers bedroom was the brief for this design',
     slides: [
       { kind: "image", src: "assets/15-BFTV.webp", width: "55.05vw", alt: "Boyfriend TV CD front" },
       { kind: "image", src: "assets/16-BFTV.webp", width: "55.09vw", alt: "Boyfriend TV CD back" }
@@ -97,7 +97,7 @@ const projects = [
   {
     client: "SE DESSAISIR PUBLISHING",
     type: "POSTER DESIGN",
-    description: 'Poster for se Dessaisir Publishings event at Miscellania - this took notes from design by Kenneth Brown for the Wednesday Play on BBC in 1964.',
+    description: 'Poster for se Dessaisir Publishings event at Miscellania - this took notes from design by Kenneth Brown for the Wednesday Play on BBC in 1964',
     slides: [
       { kind: "image", src: "assets/17-SDS-misc.webp", width: "39.15vw", alt: "Se Dessaisir Publishing poster design" }
     ]
@@ -105,7 +105,7 @@ const projects = [
   {
     client: "BODIES",
     type: "LP DESIGN",
-    description: '‘Disaster 1’ by Bodies of Divine, Infinite and Eternal Spirit. This album references the formation of the 46 members of the choir that sang on the record.',
+    description: '‘Disaster 1’ by Bodies of Divine, Infinite and Eternal Spirit. This album references the formation of the 37 members of the choir who sang on the record',
     slides: [
       { kind: "image", src: "assets/18-disaster1.webp", width: "48.17vw", alt: "Bodies LP design — record" },
       { kind: "image", src: "assets/19-disaster1.webp", width: "68.29vw", alt: "Bodies LP design — sleeve and record" },
@@ -115,7 +115,7 @@ const projects = [
   {
     client: "GUSTAV KEMPS",
     type: "CASSETTE DESIGN",
-    description: 'Design and layout for Gustav Kemps, ‘Lonesome for a Storm’ released on Motion Ward. Cover image by Justus de Rode.',
+    description: 'Design and layout for Gustav Kemps, ‘Lonesome for a Storm’ released on Motion Ward. Cover image by Justus de Rode',
     slides: [
       { kind: "image", src: "assets/21-GKEMPS-casette.webp", width: "34.32vw", alt: "Gustav Kemps cassette design" }
     ]
@@ -123,7 +123,7 @@ const projects = [
   {
     client: "LAVURN",
     type: "LP DESIGN",
-    description: 'Design and layout for Lavurns ‘Baby It Cold Outside’ released on Motion Ward.',
+    description: 'Design and layout for Lavurns ‘Baby It Cold Outside’ released on Motion Ward',
     slides: [
       { kind: "image", src: "assets/22-lavurn-cover.webp", width: "47.84vw", alt: "Lavurn LP design" }
     ]
@@ -131,7 +131,7 @@ const projects = [
   {
     client: "SE DESAISSIR PUBLISHING",
     type: "POSTER DESIGN",
-    description: 'Huerco S Poster for se Dessaisir Publishing',
+    description: 'For se Dessaisir Publishing's event headlining Huerco S',
     slides: [
       { kind: "image", src: "assets/23-SDS2-.webp", width: "38.69vw", alt: "Se Desaissir Publishing poster" }
     ]
@@ -139,7 +139,7 @@ const projects = [
   {
     client: "SAIGON COMMUNITY RADIO",
     type: "TICKET DESIGN",
-    description: 'Hand perforated tickets to the Ssaigon Community Radio Event ‘Tap 2: Episode 2’, showcasing Vietnamese musicians and artists and those residing in Vietnam. The event was hosted at Static Open in 2023.',
+    description: 'Hand-perforated tickets to the Saigon Community Radio Event ‘Tap 2: Episode 2’. The event was hosted at Static Open in 2023',
     slides: [
       { kind: "image", src: "assets/24-Saigon Community Radio.webp", width: "41.46vw", alt: "Saigon Community Radio ticket design" }
     ]
@@ -161,7 +161,7 @@ const projects = [
   {
     client: "ELVIS",
     type: "LP DESIGN",
-    description: 'Artwork for Elvis’ ‘One Less Dead’, each LP with a custom unique tie dye cover.',
+    description: 'Artwork for Elvis’ ‘One Less Dead’, each LP with a unique tie dye cover',
     slides: [
       { kind: "image", src: "assets/26-ONE LESS DEATH-ELVIS.webp", width: "45.67vw", alt: "Elvis LP design" }
     ]
@@ -169,7 +169,7 @@ const projects = [
   {
     client: "SAIGON COMMUNITY RADIO",
     type: "ANIMATION / SFX",
-    description: 'Special effects and animation for Saigon Community Radio’s TV show ‘Tap:Episode’.',
+    description: 'Special effects and animation for Saigon Community Radio’s TV series ‘Tap:Episode’',
     slides: [
       { kind: "image", src: "assets/27.webp", width: "55.14vw", alt: "Saigon Community Radio animation and SFX work" }
     ]
@@ -177,7 +177,7 @@ const projects = [
   {
     client: "MUBI",
     type: "CREATIVE DIRECTION",
-    description: 'Creative direction for a photoshoot with Layla Jones for Mubi’s promotional campaign ‘Something Different’.',
+    description: 'Creative direction for a photoshoot with Layla Jones for Mubi’s promotional campaign ‘Something Different’',
     slides: [
       { kind: "image", src: "assets/28.webp", width: "34.09vw", alt: "MUBI creative direction" }
     ]
@@ -193,7 +193,7 @@ const projects = [
   {
     client: "BOYFRIEND TV",
     type: "LP DESIGN",
-    description: 'LP artwork and design for Fawning by Boyfriend TV. Original image by Mira Pedlar.',
+    description: 'LP artwork and design for Fawning by Boyfriend TV. Original image by Mira Pedlar',
     slides: [
       { kind: "image", src: "assets/30.webp", width: "49.36vw", alt: "Boyfriend TV LP design" }
     ]
