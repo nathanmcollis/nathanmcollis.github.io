@@ -18,7 +18,7 @@ const projects = [
   {
     client: "TRAN UY DUC / RELAXIN RECORDS",
     type: "CD DESIGN",
-    description: 'Artwork and design for Tran Uy Duc on their latest release 'Byshh' out on Relaxin Records',
+    description: "Artwork and design for Tran Uy Duc on their latest release 'Byshh' out on Relaxin Records",,
     slides: [
       { kind: "image", src: "assets/1-byshh-cover.webp", width: "66.79vw", alt: "Relaxin Records / Tran Uy Duc CD cover" },
       { kind: "image", src: "assets/2-byshh-inner.webp", width: "57.99vw", alt: "Relaxin Records / Tran Uy Duc CD inner artwork" }
